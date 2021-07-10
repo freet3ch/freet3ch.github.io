@@ -43,7 +43,7 @@ exclude:
 google_analytics: UA-91424157-1
 
 # Staticman comments
-staticmanUrl: https://spinningnumbers-staticmandev2.herokuapp.com/v2/entry/freet3ch/freet3ch.github.io/main/comments
+staticmanUrl: https://canibuzzstatic.herokuapp.com/v2/entry/freet3ch/freet3ch.github.io/main/comments
 enableComments: true
 
 # reCAPTCHA keys
