@@ -1,0 +1,77 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Spinning Numbers
+email: willy@spinningnumbers.org
+author: 'Willy McAllister'
+
+description: > # this means to ignore newlines until "baseurl:"
+  Learn electrical engineering.  
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://spinningnumbers.org" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  willymcallister
+youtube_username: channel/UCCpZqoONJn-JcSRl-Y3_KXw
+facebook_username: spinningnumbers
+linkedin_username: williamhmcallister
+quora_username: Willy-McAllister
+
+# Build settings
+markdown: kramdown
+github: [metadata]
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+google_analytics: UA-91424157-1
+
+# Staticman comments
+staticmanUrl: https://spinningnumbers-staticmandev2.herokuapp.com/v2/entry/willymcallister/willymcallister.github.io/master/comments
+enableComments: true
+
+# reCAPTCHA keys
+reCaptcha:
+  siteKey: "6LcK3xkUAAAAAKdppIIORt78Df93D2qvOGtZinEy"
+  secret: "ZDr0M2qiOuw9w60zudvJr/ncny8eAcC9xezVJrqWYquHIZs6ydlY5XfJqbpOw8iYJcs3lYz3n2aL98v/6I8DXSO1b3L+eG9S458DENkCewodjDoHpwvuy2qNnNtPtALxC79dQnjmBKtr79uWCEjb8QwVolHndly5ZBnIUNE/fNCs56beTHxziZNC0zbsWSqQYIfH0glbaER3ro0VUgYTRPcI6X1hMk1xWLsa0uLtDPOPRcV21KB9ZpgahP4Bz1WQ+skNfeKkiwHvxsurLFcGWAbq+7kidnsIRmdmU9c2QD9i6goBu/g1Tc6PYawMM+ik+tADsNDspLNjOlx4TEtnVrI8EvONspE2M/WZa+QYy2raB5psy1ny/oCIuMblopHAJbigcq6y1hZfQS/QvIlWYRHuqgkI8xCEWRvSZpIofYYivk/rbUQ/DdbqGs0Bi44K9LTEytDV4jYwEyibNQ5gaxZOvJ7k34JP4+ypbUwU9SmYFr1HnTEKhg7piy64G6M1VJnZiwroWAX5NSVB7mgVwG/ofnDRfxyR/QwCYG09tV16u/P9+tbDIE7gkPXeVZMVf4aTsEbdb2p3Ng4tk4DbmcxUZf5SLAuoWG86bOHM8vvDpumLKfeqL+l31395smLu+xR3QQEWAxHTiwsKS9N9CCfSgDDQGzY/NagKMmk7wu8="
+
+collections:
+  videos:
+    output: true
+    permalink: /v/:title:output_ext
+  articles:
+    output: true
+    permalink: /a/:title:output_ext
+  topics:
+    output: true
+    permalink: /t/:title:output_ext
+  drafts:
+    output: true
+    permalink: /drafts/:title:output_ext
+
+defaults:
+  - scope:
+      path: "i"
+    values:
+      image: true
+
+timezone: America/Los_Angeles
+
+# Referenced by Jekyll-SEO-tag plug-in
+logo: "/assets/logo.png"
